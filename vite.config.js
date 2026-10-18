@@ -4,7 +4,8 @@ import { resolve } from 'path';
 export default defineConfig({
   base: './',
   server: {
-    port: 3000,
+    port: 5173,
+    strictPort: true,
     open: false,
     host: true,
   },
