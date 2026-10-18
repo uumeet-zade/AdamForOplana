@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam for Oplana | Caprican Senate Campaign 2072</title>
+  <meta name="description" content="Official campaign website of Adam, Social Democratic Alliance candidate representing Oplana in the Caprican Senate. Fighting for affordable housing, inheritance tax on the ultra-rich, investments in education, and supporting working families.">
+  <link rel="icon" href="/assets/images/SDAsmall.svg" type="image/svg+xml">
+
+  <!-- Google Fonts: Archivo (Editorial Bold Headline), Bebas Neue, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+  <a href="#hero" class="sr-only">Skip to main content</a>
+
+  <!-- =======================================================================
+       Header / Navigation Bar (Sticky with scroll state)
+       ======================================================================= -->
+  <header id="site-hdr" data-scrolled="false">
+    <div class="wrap hdr-inner">
+      <a href="#hero" class="brand-link" aria-label="Adam for Oplana — Home">
+        <div class="brand-badge" aria-hidden="true">
+          <img src="/assets/images/SDAsmall.svg" alt="SDA Rose Emblem">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Adam for Oplana</span>
+          <span class="brand-sub">Social Democratic Alliance • Senate</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="#priorities" class="nav-link">The Priorities</a>
+        <a href="#about" class="nav-link">About Adam</a>
+        <a href="#actions" class="nav-link">Take Part</a>
+        <a href="#donate" class="nav-link">Support (₳)</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#donate" class="btn btn-neutral">Donate (₳)</a>
+        <a href="#actions" class="btn btn-roll" data-open-modal="volunteer">
+          <span class="roll">
+            <span>Join Campaign</span>
+            <span aria-hidden="true">Join Campaign</span>
+          </span>
+          <span class="arr" aria-hidden="true">→</span>
+        </a>
+        <button type="button" id="menu-open" class="menu-btn" aria-label="Open navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       Mobile Fullscreen Menu Overlay
+       ======================================================================= -->
+  <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-hdr">
+      <div class="brand-text">
+        <span class="brand-title" style="color: #ffffff;">Adam for Oplana</span>
+        <span class="brand-sub" style="color: #ffb0c2;">Caprican Senate 2072</span>
+      </div>
+      <button type="button" id="menu-close" class="mobile-close" aria-label="Close menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links" aria-label="Mobile Menu Links">
+      <a href="#priorities" class="mobile-nav-link">The Priorities</a>
+      <a href="#about" class="mobile-nav-link">About Adam</a>
+      <a href="#actions" class="mobile-nav-link">Take Part</a>
+      <a href="#donate" class="mobile-nav-link">Grassroots Support</a>
+    </nav>
+
+    <div class="mobile-footer-btns">
+      <a href="#donate" class="btn btn-outline-white">Donate ₳</a>
+      <a href="#actions" class="btn btn-white" data-open-modal="volunteer">Join Movement</a>
+    </div>
+  </div>
+
+  <main id="content">
+
+    <!-- =======================================================================
+         Hero Section (Inspired by edouardphilippe.fr sticky/editorial layout)
+         ======================================================================= -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-accent" aria-hidden="true"></div>
+
+      <div class="wrap hero-grid">
+        <!-- Hero Text & Platform Punch -->
+        <div class="hero-content">
+          <div class="hero-meta">
+            <span class="eyebrow eyebrow-pill">Caprican Senate • District of Oplana</span>
+            <span class="eyebrow eyebrow-pill" style="background: #fff; border-color: var(--color-border); color: var(--color-text-muted);">Social Democratic Alliance</span>
+          </div>
+
+          <h1 class="hero-title">
+            A Fairer Future
+            <span class="text-red">For Oplana.</span>
+          </h1>
+
+          <p class="hero-tagline">
+            It is time for a Senate that stands up for <strong>working families, students, and everyday citizens</strong>. We are fighting to build more affordable housing, make the ultra-rich pay their fair share, and reinvest our collective wealth into world-class schools.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#actions" class="btn btn-roll btn-lg" data-open-modal="volunteer">
+              <span class="roll">
+                <span>Join The Campaign</span>
+                <span aria-hidden="true">Join The Campaign</span>
+              </span>
+              <span class="arr" aria-hidden="true">→</span>
+            </a>
+            <a href="#priorities" class="btn btn-neutral btn-lg">
+              Explore Priorities ↓
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="hero-stat-val">Oplana</span>
+              <span class="hero-stat-lbl">Senate Representation</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-val">SDA</span>
+              <span class="hero-stat-lbl">Democratic Coalition</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-val">4 Key Pillars</span>
+              <span class="hero-stat-lbl">Party Manifesto</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-val">100%</span>
+              <span class="hero-stat-lbl">Grassroots Backed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Candidate Visual (Photo of Olaf Scholz with smooth bottom fade) -->
+        <div class="hero-visual">
+          <div class="hero-portrait-frame">
+            <img src="/assets/images/adam-hero-fade.png" alt="Adam, candidate for the Caprican Senate in Oplana" class="hero-img">
+            <div class="hero-candidate-badge">
+              <div class="name">Adam</div>
+              <div class="office">Candidate for Caprican Senate</div>
+              <div class="party">Social Democratic Alliance (SDA)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Quote Banner (Bold Red Section with Candidate Vision)
+         ======================================================================= -->
+    <section class="quote-banner">
+      <div class="wrap quote-grid">
+        <div class="quote-author-card">
+          <img src="/assets/images/adam-portrait-3x4.jpg" alt="Adam Portrait" class="quote-author-portrait">
+          <span class="quote-author-name">Adam</span>
+          <span class="quote-author-role">Candidate for Oplana</span>
+          <div class="quote-signature-wrap">
+            <img src="/assets/images/SDAsmall.svg" alt="SDA Emblem" style="height: 32px; filter: brightness(0) invert(1);">
+            <span style="font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">Caprica 2072</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="eyebrow eyebrow-light">Our Commitment to Oplana</span>
+          <blockquote class="quote-text">
+            “Oplana is a city of builders, students, and hard-working families. For too long, the Senate has catered to elite dynasty fortunes while rents spiral and schools are starved of funding. We will deliver <em>real economic relief</em>, protect our tenants, and build an Oplana where no one is left behind.”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Priorities Section (The 4 Pillars requested by user)
+         ======================================================================= -->
+    <section id="priorities" class="sec sec-pan">
+      <div class="wrap">
+        <div class="priorities-header">
+          <div>
+            <span class="eyebrow">The Legislative Agenda</span>
+            <h2 class="sec-title">Our 4 Core Priorities</h2>
+            <p class="sec-desc">
+              Grounded in the Social Democratic Alliance manifesto, our campaign puts forward four decisive legislative measures to guarantee economic justice, quality education, and community dignity in Oplana.
+            </p>
+          </div>
+          <div style="text-align: right;">
+            <a href="#actions" class="btn btn-roll" data-open-modal="volunteer">
+              <span class="roll">
+                <span>Support The Plan</span>
+                <span aria-hidden="true">Support The Plan</span>
+              </span>
+              <span class="arr" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="priorities-grid">
+          <!-- Pillar 1: Affordable Housing -->
+          <article class="priority-card">
+            <div class="priority-top">
+              <span class="priority-num">01</span>
+              <span class="priority-category">Housing & Urban Equity</span>
+            </div>
+            <h3>More Affordable Housing</h3>
+            <p class="priority-lead">
+              Safe, affordable housing is a fundamental human right. We will dismantle bureaucratic bottlenecks and stand up against predatory corporate landlords speculating on Oplana homes.
+            </p>
+            <ul class="priority-bullets">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>The Caprica Foundations Act:</strong> Compounding tax incentives and streamlined permits for builders of non-profit and cooperative housing.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Strict Rent Stabilization:</strong> Establishing tough caps on speculative rent increases across all residential districts in Oplana.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Public Land for Public Good:</strong> Prioritizing municipal and regional land for high-efficiency communal housing cooperatives.</span>
+              </li>
+            </ul>
+            <div class="priority-pledge">
+              <strong>Caprican Senate Pledge:</strong>
+              <p>Deliver 3,000 new energy-efficient, rent-controlled homes in Oplana within our first legislative term.</p>
+            </div>
+          </article>
+
+          <!-- Pillar 2: Higher Inheritance Tax for Ultra-Rich -->
+          <article class="priority-card">
+            <div class="priority-top">
+              <span class="priority-num">02</span>
+              <span class="priority-category">Fair Taxation & Economy</span>
+            </div>
+            <h3>Higher Inheritance Tax on the Ultra-Rich</h3>
+            <p class="priority-lead">
+              Caprica's current fiscal system is unfairly regressive. Billionaire dynasties pass on untaxed fortunes while working taxpayers shoulder public burdens. We will restore true economic fairness.
+            </p>
+            <ul class="priority-bullets">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Dynasty Fortune Tax:</strong> Introducing higher marginal tax brackets exclusively targeting the top 1% multi-millionaire inheritances and trusts.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Closing Evasion Loopholes:</strong> Eliminating offshore shell maneuvers and establishing strict transparency on mega-estate transfers.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Direct Reallocation:</strong> Ring-fencing 100% of collected ultra-rich estate revenue to fund Oplana’s schools, public transit, and emergency care.</span>
+              </li>
+            </ul>
+            <div class="priority-pledge">
+              <strong>Caprican Senate Pledge:</strong>
+              <p>Zero tax hikes on middle- or lower-income families; extreme inherited fortunes must contribute to national renewal.</p>
+            </div>
+          </article>
+
+          <!-- Pillar 3: More Investments in Education -->
+          <article class="priority-card">
+            <div class="priority-top">
+              <span class="priority-num">03</span>
+              <span class="priority-category">Education & Youth</span>
+            </div>
+            <h3>More Investments in Education</h3>
+            <p class="priority-lead">
+              Our children and youth are the future of Caprica. We will modernize classrooms, expand technical apprenticeships, and ensure no young person in Oplana is priced out of their potential.
+            </p>
+            <ul class="priority-bullets">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Classroom Modernization:</strong> Direct capital funds to renovate aging schools, equip science & technology labs, and lower student-to-teacher ratios.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>The START Academy:</strong> Free weekend and post-secondary educational programs for high schoolers and university students in diplomacy, public service, and tech.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Debt-Free Vocational Pathways:</strong> Fully paid apprenticeships and living stipends for students entering high-demand skilled sectors.</span>
+              </li>
+            </ul>
+            <div class="priority-pledge">
+              <strong>Caprican Senate Pledge:</strong>
+              <p>Establish a specialized Cooperative Research & Technology Center in Oplana linked directly with local secondary schools.</p>
+            </div>
+          </article>
+
+          <!-- Pillar 4: Supporting Families & Worker Rights -->
+          <article class="priority-card">
+            <div class="priority-top">
+              <span class="priority-num">04</span>
+              <span class="priority-category">Families & Labor Rights</span>
+            </div>
+            <h3>Supporting Families & Workers</h3>
+            <p class="priority-lead">
+              A strong society starts with strong, supported families. We will establish historic labor protections, accessible childcare, and proactive community care so that every parent has peace of mind.
+            </p>
+            <ul class="priority-bullets">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Comprehensive Social Care Network:</strong> Catching families before hardship strikes through universal family counseling, mental health access, and youth clubs.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Historic Labor Protections:</strong> 50-hour workweek cap, 35 paid sick days (21 days at 100% pay), and 90% salary coverage for long-term leave.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Free Emergency Healthcare:</strong> 100% free prehospital ambulance care nationwide—no family should fear a bill during a medical crisis.</span>
+              </li>
+            </ul>
+            <div class="priority-pledge">
+              <strong>Caprican Senate Pledge:</strong>
+              <p>Expand free early childhood education spots and guarantee universal after-school care for working Oplana parents.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         About Adam Section (Spotlight Editorial Feature)
+         ======================================================================= -->
+    <section id="about" class="sec sec-white">
+      <div class="wrap">
+        <div class="spotlight-card">
+          <div class="spotlight-media">
+            <img src="/assets/images/adam-speech.jpg" alt="Adam addressing citizens at a campaign forum in Oplana">
+            <span class="spotlight-badge">Senate Campaign 2072</span>
+          </div>
+          <div class="spotlight-body">
+            <span class="eyebrow">Experience & Vision</span>
+            <h2 class="spotlight-title">A Steadfast Voice For Oplana in the Senate</h2>
+            <p class="spotlight-text">
+              Adam has dedicated his career to social democracy, honest public management, and standing up for working people. As our candidate to represent Oplana in the Caprican Senate, he brings a clear vision: an economy where working families thrive, public infrastructure is protected, and government is directly accountable to citizens.
+            </p>
+
+            <div class="spotlight-points">
+              <div class="spotlight-point">
+                <div class="spotlight-point-title">Rooted in Oplana</div>
+                <div class="spotlight-point-desc">Fighting for the specific economic, transit, and housing needs of our diverse communities.</div>
+              </div>
+              <div class="spotlight-point">
+                <div class="spotlight-point-title">SDA Coalition Leadership</div>
+                <div class="spotlight-point-desc">Championing the 2072 Manifesto: Democracy, Livelihood, and Patriotism across Caprica.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+              <a href="https://docs.google.com/document/d/1NFJCn1LZS8TzTTaQFCoeY1IEifXzWz_JzifEYwojv0I/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-neutral">
+                Read Party Manifesto ↗
+              </a>
+              <a href="#actions" class="btn btn-roll" data-open-modal="endorse">
+                <span class="roll">
+                  <span>Endorse Adam</span>
+                  <span aria-hidden="true">Endorse Adam</span>
+                </span>
+                <span class="arr" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Take Part / Get Involved Section (Interactive Action Cards)
+         ======================================================================= -->
+    <section id="actions" class="sec sec-pan">
+      <div class="wrap">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+          <span class="eyebrow">Join The Grassroots Effort</span>
+          <h2 class="sec-title">Take Part In The Campaign</h2>
+          <p class="sec-desc" style="margin: 0 auto;">
+            Our movement doesn’t rely on corporate lobbyists or special interest PACs. It depends on neighbors talking to neighbors across Oplana. Choose how you want to make a difference:
+          </p>
+        </div>
+
+        <div class="actions-grid">
+          <!-- Card 1: Canvass -->
+          <div class="action-card" data-open-modal="canvass">
+            <div class="action-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h4>Canvass & Door Knock</h4>
+            <p>Join weekend canvassing teams knocking on doors in Oplana neighborhoods to discuss our platform with voters.</p>
+            <div class="action-link-label">
+              <span>Sign Up To Canvass</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 2: Host Event -->
+          <div class="action-card" data-open-modal="host">
+            <div class="action-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h4>Host A House Meeting</h4>
+            <p>Invite neighbors and friends over for coffee to discuss the campaign and meet with Adam’s local organizing team.</p>
+            <div class="action-link-label">
+              <span>Host In Your Ward</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 3: Lawn Signs -->
+          <div class="action-card" data-open-modal="sign">
+            <div class="action-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h4>Request A Lawn Sign</h4>
+            <p>Show your support across Oplana by displaying an official red SDA campaign sign on your lawn or window.</p>
+            <div class="action-link-label">
+              <span>Request Free Sign</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Card 4: Endorsement -->
+          <div class="action-card" data-open-modal="endorse">
+            <div class="action-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h4>Public Endorsement</h4>
+            <p>Add your name to our growing roll of teachers, workers, healthcare practitioners, and students endorsing Adam.</p>
+            <div class="action-link-label">
+              <span>Add Your Name</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Donation / Support Section (Argent ₳ Presets & Interactive Module)
+         ======================================================================= -->
+    <section id="donate" class="sec sec-white">
+      <div class="wrap">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto 40px auto;">
+          <span class="eyebrow">Grassroots Campaign Finance</span>
+          <h2 class="sec-title">Power The Independent Voice For Oplana</h2>
+          <p class="sec-desc" style="margin: 0 auto;">
+            We do not accept donations from corporate monopolies or billionaire dynastic trusts. Our campaign is 100% funded by people like you contributing in Caprican Argents (₳).
+          </p>
+        </div>
+
+        <div class="donation-box">
+          <div class="donation-tabs" role="tablist">
+            <button type="button" class="donation-amt-btn" data-amount="15">₳15</button>
+            <button type="button" class="donation-amt-btn" data-amount="25">₳25</button>
+            <button type="button" class="donation-amt-btn is-active" data-amount="50">₳50</button>
+            <button type="button" class="donation-amt-btn" data-amount="100">₳100</button>
+            <button type="button" class="donation-amt-btn" data-amount="250">₳250</button>
+            <button type="button" class="donation-amt-btn" data-amount="custom">Custom</button>
+          </div>
+
+          <div id="custom-amt-wrap" class="custom-amt-input-wrap">
+            <span class="custom-amt-currency">₳</span>
+            <input type="text" id="custom-amt-input" class="custom-amt-input" placeholder="Enter amount in Argents (e.g. 75)" inputmode="numeric">
+          </div>
+
+          <div class="donation-impact-card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-red)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <p id="donation-impact-text">₳50 equips an Oplana grassroots canvass team with clipboards, signs, and campaign materials.</p>
+          </div>
+
+          <button type="button" id="donate-submit-btn" class="btn btn-roll donation-cta-btn">
+            Contribute ₳50 to Adam for Oplana →
+          </button>
+
+          <p class="donation-disclaimer">
+            All campaign contributions are strictly grassroots and audited in full accordance with the Caprican Electoral Campaign Finance regulations. The currency of Caprica is the Argent (₳).
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================================
+       Volunteer & Action Modal
+       ======================================================================= -->
+  <div id="volunteer-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="modal-dialog">
+      <button type="button" id="modal-close" class="modal-close" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <span class="eyebrow">Grassroots Action</span>
+      <h3 id="modal-heading" style="font-family: var(--font-headline); font-weight: 900; font-size: 1.8rem; text-transform: uppercase; color: var(--color-encre); margin-bottom: 8px;">
+        Join the Movement for Oplana
+      </h3>
+      <p id="modal-subtitle" style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 24px;">
+        Join neighbors across Oplana building a community-driven campaign for the Caprican Senate.
+      </p>
+
+      <form id="volunteer-form">
+        <div class="form-group">
+          <label for="vol-name" class="form-label">Full Name</label>
+          <input type="text" id="vol-name" class="form-input" placeholder="e.g. Elena Vance" required>
+        </div>
+
+        <div class="form-group">
+          <label for="vol-email" class="form-label">Email Address</label>
+          <input type="email" id="vol-email" class="form-input" placeholder="elena@example.caprica" required>
+        </div>
+
+        <div class="form-group">
+          <label for="vol-neighborhood" class="form-label">Oplana Neighborhood / District</label>
+          <input type="text" id="vol-neighborhood" class="form-input" placeholder="e.g. Central Oplana, Harbor Quarter, University Heights" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">How would you like to help?</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="interest" value="canvass" checked> Door-to-Door Canvassing
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="interest" value="host"> Host a Living Room Event
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="interest" value="sign"> Free Yard Sign Delivery
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="interest" value="endorse"> Public Endorsement List
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-roll" style="width: 100%; padding: 15px; margin-top: 10px;">
+          <span class="roll">
+            <span>Confirm & Join Movement</span>
+            <span aria-hidden="true">Confirm & Join Movement</span>
+          </span>
+          <span class="arr" aria-hidden="true">→</span>
+        </button>
+      </form>
+
+      <div id="form-success" class="form-success-msg">
+        ✓ Thank you for standing with Adam! An Oplana campaign organizer will connect with you shortly.
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       Footer
+       ======================================================================= -->
+  <footer id="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <div class="brand-badge" style="width: 40px; height: 40px;">
+              <img src="/assets/images/SDAsmall.svg" alt="SDA Emblem">
+            </div>
+            <span class="footer-brand-title">Adam for Oplana</span>
+          </div>
+          <p class="footer-brand-desc">
+            Standing for public housing, fair taxation on inherited mega-fortunes, world-class schools, and unshakeable dignity for working families in the Caprican Senate.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>The Campaign</h5>
+          <ul class="footer-links">
+            <li><a href="#priorities">The 4 Key Priorities</a></li>
+            <li><a href="#about">About Candidate Adam</a></li>
+            <li><a href="https://docs.google.com/document/d/1NFJCn1LZS8TzTTaQFCoeY1IEifXzWz_JzifEYwojv0I/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Social Democratic Manifesto</a></li>
+            <li><a href="#actions">Grassroots Volunteer Hub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Get In Touch</h5>
+          <ul class="footer-links">
+            <li><a href="#actions" data-open-modal="volunteer">Join Local Oplana Committee</a></li>
+            <li><a href="#donate">Contribute in Argents (₳)</a></li>
+            <li><a href="javascript:void(0)" id="btn-share-campaign">Share Campaign Page 🔗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span class="footer-legal-tag">AUTHORIZED BY THE COMMITTEE TO ELECT ADAM • SOCIAL DEMOCRATIC ALLIANCE (SDA)</span>
+        </div>
+        <div>
+          © 2072 Adam for Oplana Campaign. Caprica Electoral Commission Registration.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
